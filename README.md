@@ -1,5 +1,5 @@
 # Config
-配置中心
+配置中心-Github-配置上云-阿里云盘
 
 | Note   | 系统  | 配置路径                          | Download |
 | ------ | ----- | --------------------------------- | -------- |
@@ -8,9 +8,14 @@
 |        |       |                                   |          |
 |        |       |                                   |          |
 
+
+
 | Browser | 系统  | 配置路径                              | Download |
 | ------- | ----- | ------------------------------------- | -------- |
 | Brave   | WIN   | Users/LNQ/AppData/Local/BraveSoftware |          |
 | Brave   | LINUX | /home/inverstar/.config/BraveSoftware |          |
 |         |       |                                       |          |
 |         |       |                                       |          |
+
+
+
