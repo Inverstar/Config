@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      // "MIMode": "",
+      "console": "integratedTerminal",
+      // internalConsole：内部控制台。
+      // integratedTerminal:内部终端。
+      // externalTerminal:外部终端。
+      "args": [],
+      "cwd": "${fileDirname}",
+      "env": {
+        "PATH": "C:\\Night\\IDE\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64;${env:PATH}"
+      },
+      "environment": [],
+      "miDebuggerPath": "C:\\Night\\IDE\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\.exe",
+      "name": "single file debug",
+      "preLaunchTask": "single file build",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "request": "launch",
+      "stopAtEntry": false,
+      "type": "cppvsdbg"
+    }
+  ],
+  "version": "0.2.0"
+}
