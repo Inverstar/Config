@@ -19,7 +19,11 @@
         "/Zi",
         "${file}",
         "/Fe:",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
+        "/Fo:",
+        "${fileDirname}\\build\\",
+        "/Fd:",
+        "${fileDirname}\\build\\",
         "/EHsc",
         "/source-charset:utf-8",
         "/execution-charset:gbk",
@@ -46,7 +50,7 @@
     {
       "label": "run and pause",
       // "type": "pause-console",
-      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "command": "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
       "args": [],
       "dependsOn": "single file build",
       "options": {

@@ -14,7 +14,7 @@ int main(void) {
     /* 在标准输出中打印 "Hello, world!" */
     printf("Hello, world!\n");
     int a = 0;
-    scanf("%d",&a);
+    // scanf("%d",&a);
     printf_s("%d",a);
     printf("Hello, world!\n");
     return EXIT_SUCCESS;
