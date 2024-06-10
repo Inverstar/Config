@@ -12,11 +12,12 @@
 
 int main(void) {
     /* 在标准输出中打印 "Hello, world!" */
-    printf("Hello, world!\n");
+    printf("Main Start!\n");
+    printf("中文测试!\n");
     int a = 0;
-    scanf("%d",&a);
+    // scanf("%d",&a);
     printf_s("%d",a);
-    printf("Hello, world!\n");
+    printf("Main Over!\n");
     return EXIT_SUCCESS;
 }
 

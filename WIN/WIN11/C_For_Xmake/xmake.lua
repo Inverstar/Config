@@ -1,4 +1,13 @@
 add_rules("mode.debug", "mode.release")
+set_default(false)
+-- 指定使用MSVC编译器
+set_toolchains("msvc")
+-- 为MSVC设置源文件编码为UTF-8
+add_cxflags("/source-charset:utf-8", "/execution-charset:gbk")
+-- if is_plat("windows") then
+--     -- add_cxflags("/utf-8")
+--     add_cxflags("/source-charset:utf-8", "/execution-charset:gbk")
+-- end
 
 target("C_For_Xmake")
     set_kind("binary")
@@ -7,14 +16,7 @@ target("C_For_Xmake")
 target("Test_Single")
     set_kind("binary")
     add_files("test.c")
-
--- 指定使用MSVC编译器
-set_toolchains("msvc")
-
--- 为MSVC设置源文件编码为UTF-8
-if is_plat("windows") then
-    add_cxflags("/utf-8")
-end
+    set_default(true)
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
 --

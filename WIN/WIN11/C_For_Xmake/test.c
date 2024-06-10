@@ -12,11 +12,12 @@
 
 int main(void) {
     /* 在标准输出中打印 "Hello, world!" */
-    printf("Hello, world!\n");
+    printf("Test!\n");
+    printf("测试，utf-8编译但转gbk输出!\n");
     int a = 0;
-    scanf("%d",&a);
+    // scanf("%d",&a);
     printf_s("%d",a);
-    printf("Hello, world!\n");
+    printf("Test Over!\n");
     return EXIT_SUCCESS;
 }
 
