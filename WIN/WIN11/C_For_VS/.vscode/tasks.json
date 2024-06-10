@@ -12,6 +12,9 @@
   },
   "tasks": [
     {
+      "label": "single file build",
+      "type": "shell",
+      "command": "cl.exe",
       "args": [
         "/Zi",
         "${file}",
@@ -26,12 +29,11 @@
           "value": "\""
         }
       ],
-      "command": "cl.exe",
       "group": {
         "isDefault": true,
         "kind": "build"
       },
-      "label": "single file build",
+      "problemMatcher": "$msCompile",
       "presentation": {
         // "clear": true,
         // "echo": false,
@@ -39,15 +41,14 @@
         "panel": "dedicated",
         // "reveal": "silent",
         "showReuseMessage": false
-      },
-      "problemMatcher": "$msCompile",
-      "type": "shell"
+      }
     },
     {
-      "args": [],
-      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-      "dependsOn": "single file build",
       "label": "run and pause",
+      // "type": "pause-console",
+      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "dependsOn": "single file build",
       "options": {
         "cwd": "${fileDirname}",
         "env": {}
@@ -60,8 +61,7 @@
         // "reveal": "never",
         "showReuseMessage": false
       },
-      "problemMatcher": [],
-      // "type": "pause-console"
+      "problemMatcher": []
     }
   ],
   "version": "2.0.0"
